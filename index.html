@@ -98,32 +98,7 @@
     </button>
   </div>
 
-  <script>
-    setTimeout(() => {
-      // Create iframe dynamically after 5 seconds
-      const iframe = document.createElement('iframe');
-      iframe.id = 'work-frame';
-      iframe.src = 'work-clean.html';
-      iframe.title = 'Work Content';
-      document.body.appendChild(iframe);
 
-      // Slide down loading screen to reveal iframe
-      const loadingScreen = document.getElementById('loading-screen');
-      loadingScreen.classList.add('slide-down');
-
-      loadingScreen.addEventListener('transitionend', () => {
-        loadingScreen.style.display = 'none';
-        document.body.style.overflow = 'auto'; // re-enable scroll if needed
-      }, { once: true });
-
-    }, 5000); // 5000ms = 5 seconds
-  </script>
-<script>
-  // Redirect after 3 seconds (adjust delay as needed)
-  setTimeout(function() {
-    window.location.href = "https://shrutikarthikeyan.github.io/-shrutikarthikeyan.github.io/";
-  }, 5000);
-</script>
 
 </body>
 </html>
